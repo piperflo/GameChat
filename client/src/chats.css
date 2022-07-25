@@ -1,0 +1,32 @@
+.chats-page {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .header {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+  }
+  
+  .company-name {
+    text-align: center;
+    left: 22px;
+    top: 10px;
+    font-size: 35px;
+    font-weight: 700;
+    color: purple;
+    width: 300px;
+    margin: auto;
+  }
+  
+  .logout {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    color: white;
+    cursor: pointer;
+  }
