@@ -6,7 +6,8 @@ with chat functionality without losing login info
 
 I also used some code from my reddit-clone application
 
-
+https://chatengine.io/
+https://chatengine.io/docs/react/v1
 https://firebase.google.com/products/auth
 https://stackoverflow.com/questions/68393566/how-to-import-authcontext-created-in-app-js-in-other-components
 And my own personal code was used for this portion

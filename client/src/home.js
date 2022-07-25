@@ -6,6 +6,10 @@ import { useAuthContext } from './AuthContext'
 import axios from 'axios';
 import './chats.css';
 //import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+
+//Don't forget to move keys
+
 const Home = () => {
     const meURL = 'https://api.chatengine.io/users/me';
     const [load, setLoad] = useState(true);
@@ -28,12 +32,12 @@ const Home = () => {
             pastData.push('/');
             return;
         }
-        
+
         //Getting the project-id to set everything
         //found examples of this on on the firestore website
         axios.get(meURL, {
             headers: {
-                "project-id": "a5e5430d-619e-44ba-bc2d-e6a67daa20bb",
+                "project-id": "a5e5430d-619e-44ba-bc2d-e6a67daa20bb", //
                 "user-name": user.email,
                 "user-secret": user.uid,
             }
@@ -49,11 +53,9 @@ const Home = () => {
             }
             else{
                 info.append('email', user.email);
-                info.append('username', username);
+                info.append('username', user.email);
                 info.append('secret', user.uid);
-            }
-            
-                   
+            }          
         })
     }, [user,username, pastData]);
   return (
@@ -80,10 +82,11 @@ const Home = () => {
         </div>
 
       </div>
-      <ChatEngine 
-        projectID="a5e5430d-619e-44ba-bc2d-e6a67daa20bb"
-        userName={user.email}
-        userSecret={user.uid}/>
+        <ChatEngine 
+            projectID="a5e5430d-619e-44ba-bc2d-e6a67daa20bb"//
+            userName={user.email}
+            userSecret={user.uid} 
+            />
         <div className="References">
             <a href="https://firebase.google.com/products/firestore">Link to FireBase Website</a>
         </div>

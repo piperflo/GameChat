@@ -11,7 +11,7 @@ const Login = () => {
   function login(email, password){
     //return createUserWithEmailAndPassword(auth, email, password);
   }
-  /*Insert after line 22
+  /*Insert after line 25
         <div className="email-login" onClick={() => auth.signInWithRedirect(new firebase.auth.EmailAuthProvider())}>
           <UserAddOutlined /> Sign In With Email
         </div>
